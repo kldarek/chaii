@@ -3,6 +3,8 @@ Chaii - Hindi and Tamil Question Answering Kaggle Competition Solution
 
 ## Reproduction instructions
 
+### Training
+
 I trained all my models via jupyter notebooks. The notebooks used to train the models from my final ensemble are saved in the `training_notebooks` folder.
 
 The notebooks refer to the following csv files:
@@ -29,3 +31,8 @@ In some instances I used an interim checkpoint when both local CV and public LB 
 | 122f0 | progressive resizing, cutout 0.03, longer seqlen, smaller LR | muril-large | linear | 0.1 | 1 | 2.5 | 0.01 | 8/4 | 384-448 | 801 | checkpoint 4000 |
 | 126-s1 | 1 epoch all data, no cutout | rembert | linear | 0.1 | 1 | 1 | 0.01 | 8/16 | 384 | 793 | final |
 
+### Inference
+
+I published my inference notebook along with the used datasets on Kaggle: https://www.kaggle.com/thedrcat/chaii-ensemble-10postuning/notebook
+
+You can use that notebook to run inference. 
